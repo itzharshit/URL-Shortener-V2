@@ -49,14 +49,7 @@ REPLIT_APP_NAME = os.environ.get("REPLIT_APP_NAME", None) # your replit app name
 REPLIT = f"https://{REPLIT_APP_NAME.lower()}.{REPLIT_USERNAME}.repl.co" if REPLIT_APP_NAME and REPLIT_USERNAME else False
 PING_INTERVAL = int(os.environ.get("PING_INTERVAL", "300"))
 
-# Bypass Bot
-GDTot_Crypt = os.environ.get("GD_CRYPT","")
-Laravel_Session = os.environ.get("Laravel_Session","")
-XSRF_TOKEN = os.environ.get("XSRF_TOKEN","")
-KCRYPT = os.environ.get("KOLOP_CRYPT","")
-DCRYPT = os.environ.get("DRIVEFIRE_CRYPT","")
-HCRYPT = os.environ.get("HUBDRIVE_CRYPT","")
-KATCRYPT = os.environ.get("KATDRIVE_CRYPT","")
+
 
 
 LOG_STR = "\nHeroku is {0}\n".format("Enabled" if HEROKU else "Disabled") + "Users {0} use this bot".format("cannot" if IS_PRIVATE else "can")
