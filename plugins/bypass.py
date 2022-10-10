@@ -6,7 +6,10 @@ import os
 import ddl
 import requests
 import threading
+from config import (GDTot_Crypt, Laravel_Session, XSRF_TOKEN, KCRYPT,
+                    DCRYPT, HCRYPT, KATCRYPT)
 
+#end
 # bot
 bot_token = os.environ.get("BOT_TOKEN", "")
 api_hash = os.environ.get("API_HASH", "") 
@@ -14,13 +17,13 @@ api_id = os.environ.get("API_ID", "")
 app = Client("my_bot",api_id=api_id, api_hash=api_hash,bot_token=bot_token)  
 
 # ENVs
-GDTot_Crypt = os.environ.get("GD_CRYPT","")
-Laravel_Session = os.environ.get("Laravel_Session","")
-XSRF_TOKEN = os.environ.get("XSRF_TOKEN","")
-KCRYPT = os.environ.get("KOLOP_CRYPT","")
-DCRYPT = os.environ.get("DRIVEFIRE_CRYPT","")
-HCRYPT = os.environ.get("HUBDRIVE_CRYPT","")
-KATCRYPT = os.environ.get("KATDRIVE_CRYPT","")
+#GDTot_Crypt = os.environ.get("GD_CRYPT","")
+#Laravel_Session = os.environ.get("Laravel_Session","")
+#XSRF_TOKEN = os.environ.get("XSRF_TOKEN","")
+#KCRYPT = os.environ.get("KOLOP_CRYPT","")
+#DCRYPT = os.environ.get("DRIVEFIRE_CRYPT","")
+#HCRYPT = os.environ.get("HUBDRIVE_CRYPT","")
+#KATCRYPT = os.environ.get("KATDRIVE_CRYPT","")
 
 
 # main thread
